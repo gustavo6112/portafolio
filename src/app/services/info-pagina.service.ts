@@ -23,7 +23,7 @@ export class InfoPaginaService {
       .subscribe((resp:InfoPagina)=>{
         this.cargada=true;
         this.info=resp;
-        console.log(resp);
+        //console.log(resp);
       });//recibe una respuesta
       //para recuperar la respuesta solo un atributo resp.twitter
       //resolver el error si solo ponemos para sacar el dato (resp:any)=>{col.log(res.twitter)}
@@ -36,7 +36,7 @@ export class InfoPaginaService {
       .subscribe((resp:Equipo)=>{
         this.equipo=resp;
         this.cargada=true;
-        console.log(resp);
+        //console.log(resp);
       });
   }
 }

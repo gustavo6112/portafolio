@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { InfoPaginaService } from './services/info-pagina.service';
+import { ProductosService } from './services/productos.service';
 
 
 @Component({
@@ -8,6 +9,7 @@ import { InfoPaginaService } from './services/info-pagina.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(public infoPaginaService:InfoPaginaService){
+  constructor(public infoPaginaService:InfoPaginaService,
+              public productosService:ProductosService){
   }//solo si se vuelve a recargar carga de nuevo los datos
 }
